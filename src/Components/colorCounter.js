@@ -6,7 +6,7 @@ const ColorCounter = ()=>{
   return (
     <View>
       <View 
-      style={{width:50,height:50,backgroundColor:'rgb(0,255,250)'}}></View>
+      style={{width:50,height:50,backgroundColor:'rgb(55,55,205)'}}></View>
       <Button 
         title="increase red"
       />
