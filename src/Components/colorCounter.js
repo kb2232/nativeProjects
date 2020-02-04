@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { View,Text, StyleSheet, TouchableOpacity, Button,FlatList } from 'react-native';
 
-const ColorCounter = ()=>{
+const ColorCounter = ({color, onIncrease, onDecrease})=>{
   const {textStyle,buttonColor,buttonContainer} = styles;
   return (
     <View>
-      <View 
-      style={{width:50,height:50,backgroundColor:'rgb(55,55,205)'}}></View>
+      <Text>{color}</Text>
       <Button 
-        title="increase red"
+        onPress={()=>onIncrease()}
+        title={`increase ${color}`}
       />
       <Button 
-        title="decrease red"
+        onPress={()=>onDecrease()}
+        title={`decrease ${color}`}
       />
     </View>
   )
